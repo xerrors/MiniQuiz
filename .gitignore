@@ -1,0 +1,11 @@
+node_modules/
+data/*.csv
+server/*.db
+
+__pycache__/
+package-lock.json
+.DS_Store
+
+.vscode/
+.env
+.idea/
