@@ -21,7 +21,7 @@
 │   └── public/       # 静态资源
 └── data/             # 数据文件
     ├── questions.csv.example  # 题库示例
-    └── users.csv     # 用户数据
+    └── user.csv     # 用户数据
 ```
 
 ## 预览
@@ -48,7 +48,7 @@
 
 ### 题库格式
 
-题库使用CSV格式，示例位于 `data/questions.csv.example`。CSV文件应包含以下列：“序号,题目,A,B,C,D,答案”
+题库使用CSV格式（保存为 aigc.json），示例位于 `data/questions.csv.example`。CSV文件应包含以下列：“序号,题目,A,B,C,D,答案”
 
 ```csv
 序号,题目,A,B,C,D,答案
@@ -63,7 +63,7 @@
 
 ### 用户数据
 
-用户数据位于 `data/users.csv`，包含用户ID、密码、姓名、角色和班级信息。
+用户数据位于 `data/user.csv`，包含用户ID、密码、姓名、角色和班级信息。
 
 ```csv
 S1001,pass1,张三,student,一班
@@ -98,7 +98,7 @@ cd web
 npm install
 
 # 启动开发服务器
-npm run dev
+npm run server
 ```
 
 前端应用将在 http://localhost:5173 上运行。

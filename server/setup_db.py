@@ -46,10 +46,10 @@ def setup_database():
     ''')
 
     # 处理用户数据 - 使用 REPLACE 处理已存在的记录
-    if os.path.exists('../data/users.csv'):
+    if os.path.exists('../data/user.csv'):
         print("正在导入用户数据...")
         # 读取CSV文件
-        users_df = pd.read_csv('../data/users.csv')
+        users_df = pd.read_csv('../data/user.csv')
         users = users_df.values.tolist()
 
         # 使用 INSERT OR REPLACE 语法来处理重复项
@@ -65,7 +65,7 @@ def setup_database():
 
         print(f"成功处理 {len(users)} 条用户记录")
     else:
-        print("警告: 找不到用户数据文件 users.csv, 跳过")
+        print("警告: 找不到用户数据文件 user.csv, 跳过")
 
     # 导入题库数据 - 也使用 REPLACE 处理已存在的记录
     # 先检查是否已有数据
