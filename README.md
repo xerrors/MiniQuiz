@@ -1,6 +1,6 @@
-# 知识问答平台
+# 知识答题平台
 
-这是一个面向教育领域的知识问答/考试平台，可用于课程测验、知识竞赛或自我学习评估。系统支持多选题、单选题等题型，并提供答题记录和成绩统计功能。
+这是一个面向教育领域的知识答题/考试平台，可用于课程测验、知识竞赛或自我学习评估。系统支持多选题、单选题等题型，并提供答题记录和成绩统计功能。
 
 ## 功能特点
 
@@ -23,6 +23,18 @@
     ├── questions.csv.example  # 题库示例
     └── users.csv     # 用户数据
 ```
+
+## 预览
+
+![image](https://github.com/user-attachments/assets/79e95ed8-866a-4437-80c8-1ac183dad545)
+
+![image](https://github.com/user-attachments/assets/d439074f-ec27-4a8a-9e5c-19a3d90cd5a7)
+
+![image](https://github.com/user-attachments/assets/d759f138-d01e-4cf9-b6df-5db86faf0aa2)
+
+
+
+
 
 ## 安装与运行
 
