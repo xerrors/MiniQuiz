@@ -9,3 +9,5 @@ package-lock.json
 .vscode/
 .env
 .idea/
+
+*.nogit*

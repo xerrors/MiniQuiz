@@ -50,7 +50,7 @@ const getCookie = (name) => {
 const fetchRandomQuestions = async () => {
   loading.value = true;
   try {
-    const response = await fetch('http://127.0.0.1:5000/get_random_questions', {
+    const response = await fetch('/api/get_random_questions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -117,7 +117,7 @@ const submitQuiz = async () => {
   }
   // 将 query 保存到服务器，以便后续查看答题记录。
   try {
-    const response = await fetch('http://127.0.0.1:5000/save_records', {
+    const response = await fetch('/api/save_records', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

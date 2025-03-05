@@ -43,4 +43,4 @@ def convert_excel_to_csv(excel_file, save_as=None):
     return df.to_dict(orient='records')
 
 if __name__ == '__main__':
-    convert_excel_to_csv('q600.xlsx', 'q600.csv')
+    convert_excel_to_csv('data/aigc_simple_100.xlsx', 'data/aigc_simple_100.csv')
